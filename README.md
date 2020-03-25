@@ -3,6 +3,8 @@
 feel docker　環境構築手順
 
 ｀｀｀
+first:
+copy env.example .env
 
 ## 1. init
 make up
