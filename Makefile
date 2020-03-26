@@ -6,9 +6,9 @@ down:
 	docker-compose down
 ps:
 	docker-compose ps
-logs-all:
+logs:
 	docker-compose logs -f
-logs-api:
+api_logs:
 	docker-compose logs -f php-fpm
 api_install:
 	docker-compose exec workspace composer install && docker-compose exec workspace php artisan key:generate
