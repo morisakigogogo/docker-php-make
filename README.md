@@ -22,21 +22,28 @@ make up #OR
 docker-compose up -d nginx workspace
 ```
 
-## 2. API インストール
+## 1). API インストール
 ```
 make api_install #OR
 docker-compose exec workspace composer install && docker-compose exec workspace php artisan key:generate
 ```
-## 3. front　インストール
+## 2). front　インストール
 ```
 make front_install #OR
 docker-compose exec workspace npm install && docker-compose exec workspace npm audit fix
 ```
-## 4. watch
+## 2. watch
 ```
 make watch #OR
 docker-compose exec workspace npm run watch
 ```
+
+## 3.PC再起動したり
+make restart
+
+make watch
+
+
 
 ## ブラウザ
 ## http://localhost

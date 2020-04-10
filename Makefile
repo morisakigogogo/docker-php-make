@@ -1,5 +1,7 @@
 up:
 	docker-compose up -d nginx workspace
+restart:
+	docker-compose restart
 build:
 	docker-compose up -d --build nginx workspace
 down:
